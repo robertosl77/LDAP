@@ -1,0 +1,36 @@
+{
+    "configurations": {
+        "PRO GELEC": {
+            "url_ldap": "ldap://192.168.145.50:389/DC=pro,DC=edenor",
+            "usuario_ldap": "CN=SVC_consulta_ot,OU=Cuentas de Servicio,DC=pro,DC=edenor",
+            "password_ldap": "Edenor2010",
+            "user_search_filter": "(&(cn={0})(|(memberOf=CN=APP_GELEC_SUPERVISOR,OU=GELEC,OU=FIM-SG,OU=Grupos,DC=pro,DC=edenor)(memberOf=CN=APP_GELEC_CONSULTA,OU=GELEC,OU=FIM-SG,OU=Grupos,DC=pro,DC=edenor)(memberOf=CN=APP_GELEC_ADMINISTRADOR,OU=GELEC,OU=FIM-SG,OU=Grupos,DC=pro,DC=edenor)))",
+            "user_search_base": "ou=Edificios",
+            "group_search_base": "ou=GELEC,OU=FIM-SG,OU=Grupos"
+        },
+        "QA PORTAL RECLAMOS": {
+            "url_ldap": "ldap://192.168.146.214:389/DC=qa,DC=edenor",
+            "usuario_ldap": "CN=SVC_consulta_ot,OU=Cuentas de Servicio,DC=qa,DC=edenor",
+            "password_ldap": "edenor2020",
+            "user_search_filter": "(&(cn={0})(|(memberOf=CN=APP_PortalENRE_Reclamos_Operador,OU=PortalENRE_Reclamos,OU=Aplicaciones,OU=Grupos,DC=qa,DC=edenor)(memberOf=CN=APP_PortalENRE_Reclamos_Consulta,OU=PortalENRE_Reclamos,OU=Aplicaciones,OU=Grupos,DC=qa,DC=edenor)))",
+            "user_search_base": "ou=Edificios",
+            "group_search_base": "OU=PortalENRE_Reclamos,OU=Aplicaciones,OU=Grupos"
+        },
+        "PRO PORTAL RECLAMOS": {
+            "url_ldap": "ldap://192.168.145.50:389/DC=pro,DC=edenor",
+            "usuario_ldap": "CN=SVC_consulta_ot,OU=Cuentas de Servicio,DC=pro,DC=edenor",
+            "password_ldap": "Edenor2010",
+            "user_search_filter": "(&(cn={0})(|(memberOf=CN=APP_PortalENRE_Reclamos_Operador,OU=PortalENRE_Reclamos,OU=Aplicaciones,OU=Grupos,DC=pro,DC=edenor)(memberOf=CN=APP_PortalENRE_Reclamos_Consulta,OU=PortalENRE_Reclamos,OU=Aplicaciones,OU=Grupos,DC=pro,DC=edenor)))",
+            "user_search_base": "ou=Edificios",
+            "group_search_base": "OU=PortalENRE_Reclamos,OU=Aplicaciones,OU=Grupos"
+        },
+        "PRO PORTALAT": {
+            "url_ldap": "ldap://pro.edenor:389/DC=pro,DC=edenor",
+            "usuario_ldap": "CN=SVC_consulta_ot,OU=Cuentas de Servicio,DC=pro,DC=edenor",
+            "password_ldap": "Edenor2010",
+            "user_search_filter": "(&(cn={0})(|(memberOf=CN=APP_GELEC_SUPERVISOR,OU=GELEC,OU=FIM-SG,OU=Grupos,DC=pro,DC=edenor)(memberOf=CN=APP_GELEC_CONSULTA,OU=GELEC,OU=FIM-SG,OU=Grupos,DC=pro,DC=edenor)(memberOf=CN=APP_GELEC_ADMINISTRADOR,OU=GELEC,OU=FIM-SG,OU=Grupos,DC=pro,DC=edenor)))",
+            "user_search_base": "ou=Edificios",
+            "group_search_base": "ou=GELEC,OU=FIM-SG,OU=Grupos"
+        }
+    }
+}
