@@ -1,9 +1,11 @@
 class Consola:
-
     def manejador(self):
-        opcion= self.bienvenida()
-        # 
-        
+        while True:
+            opcion = self.bienvenida()
+            if opcion == 3:
+                print("Saliendo...")
+                break
+            self.ejecutar_opcion(opcion)
 
     @staticmethod
     def bienvenida():

@@ -13,7 +13,9 @@ def existeJsonID(compara):
 
 # print(existeJsonID('PRO GELEC'))
 
-Consola.manejador()
+if __name__ == "__main__":
+    consola = Consola()
+    consola.manejador()
 
 
 
